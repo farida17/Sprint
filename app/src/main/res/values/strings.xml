@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sprint</string>
+    <string name="create_sprint">Cпринт</string>
+    <string name="agree">OK</string>
+    <string name="add_sprint">ДОБАВИТЬ СПРИНТ</string>
+    <string name="add_new_sprint">Добавить новый спринт</string>
+</resources>
