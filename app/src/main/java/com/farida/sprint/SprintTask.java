@@ -2,12 +2,11 @@ package com.farida.sprint;
 
 import java.util.Objects;
 
-public class HomeTask {
+public class SprintTask {
     private String name;
     private String recommendation;
 
-
-    public HomeTask(String name, String recommendation) {
+    public SprintTask(String name, String recommendation) {
         this.name = name;
         this.recommendation = recommendation;
     }
@@ -28,14 +27,14 @@ public class HomeTask {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        HomeTask homeTask = (HomeTask) o;
-        return name.equals(homeTask.name) &&
-                recommendation.equals(homeTask.recommendation);
+        SprintTask sprintTask = (SprintTask) o;
+        return name.equals(sprintTask.name) &&
+                recommendation.equals(sprintTask.recommendation);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(name, recommendation);
     }
-}
 
+}

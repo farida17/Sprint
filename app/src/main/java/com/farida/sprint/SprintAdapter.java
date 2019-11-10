@@ -10,38 +10,39 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class HomeAdapter extends ListAdapter<HomeTask, HomeAdapter.ViewHolder> {
+public class SprintAdapter extends ListAdapter<SprintTask, SprintAdapter.ViewHolder> {
+
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private TextView homeText1;
         private TextView homeText2;
         public ViewHolder(View v) {
             super(v);
             homeText1 = v.findViewById(R.id.home_text1);
-            homeText2 = v.findViewById(R.id.home_text2);;
+            homeText2 = v.findViewById(R.id.home_text2);
         }
 
-        void bind(HomeTask homeTask) {
-            homeText1.setText(homeTask.getName());
-            homeText2.setText(homeTask.getRecommendation());
+        void bind(SprintTask sprintTask) {
+            homeText1.setText(sprintTask.getName());
+            homeText2.setText(sprintTask.getRecommendation());
         }
     }
 
-    public HomeAdapter() {
-        super(new DiffUtil.ItemCallback<HomeTask>() {
+    public SprintAdapter() {
+        super(new DiffUtil.ItemCallback<SprintTask>() {
             @Override
-            public boolean areItemsTheSame(@NonNull HomeTask oldItem, @NonNull HomeTask newItem) {
+            public boolean areItemsTheSame(@NonNull SprintTask oldItem, @NonNull SprintTask newItem) {
                 return oldItem.getName().equals(newItem.getName());
             }
 
             @Override
-            public boolean areContentsTheSame(@NonNull HomeTask oldItem, @NonNull HomeTask newItem) {
+            public boolean areContentsTheSame(@NonNull SprintTask oldItem, @NonNull SprintTask newItem) {
                 return oldItem.equals(newItem);
             }
         });
     }
 
     @Override
-    public HomeAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public SprintAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.home_text, parent, false);
         return new ViewHolder(v);
     }

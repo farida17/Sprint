@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HealthListDetailActivity">
+    tools:context=".HealthTaskDetailActivity">
 
     <TextView
         android:id="@+id/health_text"

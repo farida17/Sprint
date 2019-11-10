@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.farida.sprint.HealthListDetailActivity"
+        <activity android:name="com.farida.sprint.HealthTaskDetailActivity"
             android:parentActivityName="com.farida.sprint.MainActivity">
         </activity>
     </application>

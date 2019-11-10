@@ -35,18 +35,32 @@ public class TopFragment extends Fragment {
         ButterKnife.bind(this, view);
     }
 
-    @OnClick(R.id.button7)
+    @OnClick(R.id.health_button)
     void onHealthClicked () {
-        HealthListFragment fragment = new HealthListFragment();
+        HealthTaskListFragment fragment = new HealthTaskListFragment();
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         transaction.replace(R.id.container, fragment);
+        transaction.addToBackStack(null);
         transaction.commit();
     }
-    @OnClick(R.id.button6)
+    @OnClick(R.id.home_button)
     void onHomeClicked() {
-        HomeListFragment fragment = new HomeListFragment();
+        HomeTaskListFragment fragment = new HomeTaskListFragment();
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         transaction.replace(R.id.container, fragment);
+        transaction.addToBackStack(null);
         transaction.commit();
+    }
+    @OnClick(R.id.work_button)
+    void onWorkClicked() {
+        WorkTaskListFragment fragment = new WorkTaskListFragment();
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.container, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+    @OnClick(R.id.development_button)
+    void onDevelopmentClicked() {
+
     }
 }

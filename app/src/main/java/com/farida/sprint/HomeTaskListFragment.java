@@ -18,16 +18,16 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeListFragment extends Fragment {
+public class HomeTaskListFragment extends Fragment {
 
-    private ListAdapter<HomeTask, HomeAdapter.ViewHolder> adapter;
+    private ListAdapter<SprintTask, SprintAdapter.ViewHolder> adapter;
     private RecyclerView.LayoutManager layoutManager;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        RecyclerView homeRecycler = (RecyclerView) inflater.inflate(R.layout.fragment_home_list, container, false);
-        adapter = new HomeAdapter();
+        RecyclerView homeRecycler = (RecyclerView) inflater.inflate(R.layout.fragment_home_task, container, false);
+        adapter = new SprintAdapter();
         adapter.submitList(homeTasks);
         homeRecycler.setAdapter(adapter);
 
@@ -38,10 +38,10 @@ public class HomeListFragment extends Fragment {
     }
 
 
-    public static List<HomeTask> homeTasks = Arrays.asList(
-            new HomeTask("Уборка", "dnfbjkdb"),
-            new HomeTask("Мытье посуды", "kjhj"),
-            new HomeTask("Стирка", "оамоаиоа"),
-            new HomeTask("Мытье окон", "fjgdfhgjkfdj")
+    public static List<SprintTask> homeTasks = Arrays.asList(
+            new SprintTask("Уборка", "dnfbjkdb"),
+            new SprintTask("Мытье посуды", "kjhj"),
+            new SprintTask("Стирка", "оамоаиоа"),
+            new SprintTask("Мытье окон", "fjgdfhgjkfdj")
     );
 }
