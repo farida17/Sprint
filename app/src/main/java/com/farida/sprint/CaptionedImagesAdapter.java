@@ -61,13 +61,10 @@ class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImagesAdapter
         imageView.setContentDescription(captions[position]);
         TextView textView = cardView.findViewById(R.id.info_text);
         textView.setText(captions[position]);
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(cardView.getContext(), HealthListDetailActivity.class);
-                intent.putExtra(HealthListDetailActivity.EXTRA_HEALTH_ID, position);
-                cardView.getContext().startActivity(intent);
-            }
+        cardView.setOnClickListener(view -> {
+            Intent intent = new Intent(cardView.getContext(), HealthTaskDetailActivity.class);
+            intent.putExtra(HealthTaskDetailActivity.EXTRA_HEALTH_ID, position);
+            cardView.getContext().startActivity(intent);
         });
     }
 }
