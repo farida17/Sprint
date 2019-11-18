@@ -5,45 +5,46 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.Arrays;
+import java.util.List;
 
-public class HealthTaskListFragment extends Fragment {
+
+public class HealthTaskListFragment extends Fragment implements SprintAdapter.Listener {
+
+    private ListAdapter<SprintTask, SprintAdapter.ViewHolder> adapter;
+    private RecyclerView.LayoutManager layoutManager;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        RecyclerView healthRecycler = (RecyclerView)inflater.inflate(R.layout.fragment_health, container, false);
-
-        String[] healthNames = new String[HealthTask.healthLists.length];
-        for (int i = 0; i < healthNames.length; i++) {
-            healthNames[i] = HealthTask.healthLists[i].getName();
-        }
-        int[] healthImages = new int[HealthTask.healthLists.length];
-        for (int i = 0; i < healthImages.length; i++) {
-            healthImages[i] = HealthTask.healthLists[i].getImage();
-        }
-        CaptionedImagesAdapter adapter = new CaptionedImagesAdapter(healthNames, healthImages);
+        RecyclerView healthRecycler = (RecyclerView)inflater.inflate(R.layout.fragment_home_task, container, false);
+        adapter = new SprintAdapter();
+        adapter.submitList(healthLists);
         healthRecycler.setAdapter(adapter);
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        layoutManager = new LinearLayoutManager(getActivity());
         healthRecycler.setLayoutManager(layoutManager);
 
-        adapter.setListener(new CaptionedImagesAdapter.Listener() {
-            @Override
-            public void onClick(int position) {
-                Intent intent = new Intent(getActivity(), HealthTaskDetailActivity.class);
-                intent.putExtra(HealthTaskDetailActivity.EXTRA_HEALTH_ID, position);
-                getActivity().startActivity(intent);
-            }
-        });
         return healthRecycler;
-
         }
+
+    public static List<SprintTask> healthLists = Arrays.asList(
+            new SprintTask("Йога", "hjjhb", R.drawable.ndbfjhdfbv),
+            new SprintTask("Неделя без сахара", "njbnbn", R.drawable.ndbfjhdfbv),
+            new SprintTask("Неделя без животных продуктов", "jvbhjb", R.drawable.ndbfjhdfbv)
+            );
+
+    @Override
+    public void onClick(int position) {
+
+    }
 }
 
 

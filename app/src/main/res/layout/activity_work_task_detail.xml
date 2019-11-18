@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.farida.sprint.WorkTaskDetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"/>
+
+    <TextView
+        android:id="@+id/home_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/home_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/home_picture"
+        android:layout_width="164dp"
+        android:layout_height="199dp"
+        android:adjustViewBounds="true" />
+
+    <Button
+        android:id="@+id/show_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show dialog" />
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="164dp"
+        android:layout_height="31dp" />
+
+
+</LinearLayout>

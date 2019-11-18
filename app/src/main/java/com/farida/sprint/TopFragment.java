@@ -25,7 +25,6 @@ public class TopFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        //Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_top, container, false);
     }
 
@@ -37,30 +36,49 @@ public class TopFragment extends Fragment {
 
     @OnClick(R.id.health_button)
     void onHealthClicked () {
-        HealthTaskListFragment fragment = new HealthTaskListFragment();
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
+        getFragmentManager().beginTransaction()
+            .replace(R.id.container, new HealthTaskListFragment())
+            .addToBackStack(null)
+            .commit();
     }
+
     @OnClick(R.id.home_button)
     void onHomeClicked() {
-        HomeTaskListFragment fragment = new HomeTaskListFragment();
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
+        getFragmentManager().beginTransaction()
+            .replace(R.id.container, new HomeTaskListFragment())
+            .addToBackStack(null)
+            .commit();
     }
+
     @OnClick(R.id.work_button)
     void onWorkClicked() {
-        WorkTaskListFragment fragment = new WorkTaskListFragment();
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
+        getFragmentManager().beginTransaction()
+            .replace(R.id.container, new WorkTaskListFragment())
+            .addToBackStack(null)
+            .commit();
     }
+
     @OnClick(R.id.development_button)
     void onDevelopmentClicked() {
+        getFragmentManager().beginTransaction()
+                .replace(R.id.container, new DevelopmentTaskListFragment())
+                .addToBackStack(null)
+                .commit();
+    }
 
+    @OnClick(R.id.hobby_button)
+    void onHobbyClicked() {
+        getFragmentManager().beginTransaction()
+                .replace(R.id.container, new HobbyTaskListFragment())
+                .addToBackStack(null)
+                .commit();
+    }
+
+    @OnClick(R.id.relationship_button)
+    void onRelationshipClicked() {
+        getFragmentManager().beginTransaction()
+                .replace(R.id.container, new RelationshipTaskListFragment())
+                .addToBackStack(null)
+                .commit();
     }
 }

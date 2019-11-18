@@ -4,4 +4,7 @@
     <string name="agree">OK</string>
     <string name="add_sprint">ДОБАВИТЬ СПРИНТ</string>
     <string name="add_new_sprint">Добавить новый спринт</string>
+
+    <string name="title_activity_work_task_detail">WorkTaskDetailActivity</string>
+    <string name="title_activity_home_task_detail">HomeTaskDetailActivity</string>
 </resources>
