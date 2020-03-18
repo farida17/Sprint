@@ -3,31 +3,24 @@
     package="com.farida.sprint">
 
     <application
+        android:name=".SprintApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".CreateSprintActivity"></activity>
         <activity
-            android:name=".HomeTaskDetailActivity"
-            android:label="Дом"
-            android:theme="@style/AppTheme"/>
+            android:name=".SprintTasksActivity"
+            android:parentActivityName=".SprintTypeActivity" />
         <activity
-            android:name=".WorkTaskDetailActivity"
-            android:label="Работа"
-            android:parentActivityName=".MainActivity"
+            android:name=".SprintTypeActivity"
+            android:label="СПРИНТ"
             android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.farida.sprint.MainActivity" />
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/AppTheme"
-            android:label="Sprint">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

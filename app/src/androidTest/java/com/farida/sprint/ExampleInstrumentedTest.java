@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.farida.sprint2", appContext.getPackageName());
+        assertEquals("com.farida.sprint", appContext.getPackageName());
     }
 }
