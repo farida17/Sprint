@@ -3,20 +3,26 @@
     package="com.farida.sprint">
 
     <application
+        android:name=".SprintApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.farida.sprint.MainActivity">
+        <activity android:name=".CreateSprintActivity"></activity>
+        <activity
+            android:name=".SprintTasksActivity"
+            android:parentActivityName=".SprintTypeActivity" />
+        <activity
+            android:name=".SprintTypeActivity"
+            android:label="СПРИНТ"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name="com.farida.sprint.HealthTaskDetailActivity"
-            android:parentActivityName="com.farida.sprint.MainActivity">
         </activity>
     </application>
 
