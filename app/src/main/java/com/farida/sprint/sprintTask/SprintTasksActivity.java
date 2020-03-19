@@ -1,4 +1,4 @@
-package com.farida.sprint;
+package com.farida.sprint.sprintTask;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,11 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.farida.sprint.CreateSprintActivity;
+import com.farida.sprint.LifecycleDaggerActivity;
+import com.farida.sprint.R;
+import com.farida.sprint.entity.SprintTask;
 
 import java.util.List;
 
@@ -45,7 +50,6 @@ public class SprintTasksActivity extends LifecycleDaggerActivity {
     private void initAdapter() {
         SprintTaskAdapter.OnSprintTaskClickListener listener = this::onSprintTaskClick;
         sprintTaskAdapter = new SprintTaskAdapter(listener);
-        //sprintTaskAdapter = new SprintTaskAdapter(this::onSprintTaskClick);
         listTaskLiveData.observe(this, sprintTasks -> sprintTaskAdapter.setSprintTasks(sprintTasks));
     }
 

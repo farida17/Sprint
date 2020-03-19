@@ -1,4 +1,4 @@
-package com.farida.sprint;
+package com.farida.sprint.dao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -7,6 +7,8 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
+
+import com.farida.sprint.entity.SprintTask;
 
 import java.util.List;
 
@@ -18,7 +20,6 @@ import io.reactivex.Single;
 public interface SprintTaskDao {
     /*@Query("SELECT * from sprints")
     List<SprintTask> getAll();
-
     @Query("SELECT * from sprints where sid = :id")
     SprintTask getById(long id);*/
 

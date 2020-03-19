@@ -1,6 +1,9 @@
-package com.farida.sprint;
+package com.farida.sprint.repository;
 
 import androidx.lifecycle.LiveData;
+
+import com.farida.sprint.dao.SprintTypeDao;
+import com.farida.sprint.entity.SprintType;
 
 import java.util.List;
 
@@ -19,7 +22,7 @@ public class SprintTypeRepository {
         return sprintTypeDao.getSprintTypeCount() == 0;
     }
 
-    LiveData<List<SprintType>> getSprintTypes() {
+    public LiveData<List<SprintType>> getSprintTypes() {
         return sprintTypeDao.getAllSprintTypes();
     }
 

@@ -1,4 +1,4 @@
-package com.farida.sprint;
+package com.farida.sprint.sprintType;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.farida.sprint.R;
+import com.farida.sprint.entity.SprintType;
 
 import java.util.List;
 
@@ -39,10 +42,6 @@ public class SprintTypeAdapter extends RecyclerView.Adapter<SprintTypeAdapter.Sp
     }
 
     private List<SprintType> sprintTypes;
-
-    /*SprintTypeAdapter(Context context) {
-        layoutInflater = LayoutInflater.from(context);
-    }*/
 
     @NonNull
     @Override

@@ -1,4 +1,4 @@
-package com.farida.sprint;
+package com.farida.sprint.sprintTask;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.farida.sprint.R;
+import com.farida.sprint.entity.SprintTask;
 
 import java.util.List;
 

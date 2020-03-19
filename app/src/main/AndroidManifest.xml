@@ -12,10 +12,10 @@
         android:theme="@style/AppTheme">
         <activity android:name=".CreateSprintActivity"></activity>
         <activity
-            android:name=".SprintTasksActivity"
-            android:parentActivityName=".SprintTypeActivity" />
+            android:name=".sprintTask.SprintTasksActivity"
+            android:parentActivityName=".sprintType.SprintTypeActivity" />
         <activity
-            android:name=".SprintTypeActivity"
+            android:name=".sprintType.SprintTypeActivity"
             android:label="СПРИНТ"
             android:theme="@style/AppTheme">
             <intent-filter>

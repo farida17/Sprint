@@ -11,7 +11,6 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import dagger.android.support.AndroidSupportInjectionModule;
-import io.reactivex.disposables.CompositeDisposable;
 
 @Module(includes = {
         InitializerModule.class,
@@ -30,10 +29,5 @@ class ApplicationModule {
     @Singleton
     Executor providesExecutor() {
         return Executors.newSingleThreadExecutor();
-    }
-
-    @Provides
-    public CompositeDisposable getCompositeDisposable() {
-        return new CompositeDisposable();
     }
 }

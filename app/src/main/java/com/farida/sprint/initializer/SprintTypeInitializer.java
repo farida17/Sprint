@@ -3,8 +3,8 @@ package com.farida.sprint.initializer;
 import android.content.Context;
 
 import com.farida.sprint.R;
-import com.farida.sprint.SprintType;
-import com.farida.sprint.SprintTypeRepository;
+import com.farida.sprint.entity.SprintType;
+import com.farida.sprint.repository.SprintTypeRepository;
 import com.google.common.reflect.TypeToken;
 
 import java.lang.reflect.Type;
