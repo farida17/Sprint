@@ -1,8 +1,8 @@
 package com.farida.sprint.module;
 
 import com.farida.sprint.CreateSprintActivity;
-import com.farida.sprint.SprintTasksActivity;
-import com.farida.sprint.SprintTypeActivity;
+import com.farida.sprint.sprintTask.SprintTasksActivity;
+import com.farida.sprint.sprintType.SprintTypeActivity;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;

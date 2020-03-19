@@ -1,20 +1,21 @@
-package com.farida.sprint;
+package com.farida.sprint.repository;
 
 import androidx.lifecycle.LiveData;
 
+import com.farida.sprint.dao.SprintTaskDao;
+import com.farida.sprint.entity.SprintTask;
+
 import java.util.List;
-import java.util.concurrent.Executor;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
 import io.reactivex.Flowable;
-import io.reactivex.Single;
 
 @Singleton
 public final class SprintTaskRepository {
+
     private final SprintTaskDao sprintTaskDao;
-    private Executor executor;
 
     @Inject
     SprintTaskRepository(SprintTaskDao sprintTaskDao) {
@@ -25,9 +26,9 @@ public final class SprintTaskRepository {
         return sprintTaskDao.getSprintTasks();
     }
 
-    public Single<SprintTask> getSprintTask() {
+    /*public Single<SprintTask> getSprintTask() {
         return sprintTaskDao.getSprintTask();
-    }
+    }*/
 
     public LiveData<List<SprintTask>> getSprintTasksForCertainSprintType(long id) {
         return sprintTaskDao.getSprintTasksForSprintType(id);

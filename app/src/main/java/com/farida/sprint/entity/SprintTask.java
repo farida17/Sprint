@@ -1,4 +1,4 @@
-package com.farida.sprint;
+package com.farida.sprint.entity;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;

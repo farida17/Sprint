@@ -1,4 +1,4 @@
-package com.farida.sprint;
+package com.farida.sprint.entity;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -30,7 +30,7 @@ public class SprintType {
         this.sprintTypeName = sprintTypeName;
     }
 
-    String getSprintTypeName() {
+    public String getSprintTypeName() {
         return sprintTypeName;
     }
 
@@ -50,4 +50,3 @@ public class SprintType {
         return Objects.hashCode(id, sprintTypeName);
     }
 }
-

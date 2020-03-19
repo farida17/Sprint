@@ -1,68 +1,83 @@
 [
   {
     "name": "Планировать рабочий день",
-    "recommendation": "vxcnvknvjk",
-    "sprintType": 4
+    "recommendation": "",
+    "sprintType": 8
   },
   {
-    "name": "Начать эффективно сотрудничать",
-    "recommendation": "dsjnfjdnsfdslkfjdlks",
-    "sprintType": 4
+    "name": "Читать профессиональную литературу",
+    "recommendation": "",
+    "sprintType": 8
   },
   {
-    "name": "Развивать новые навыки",
-    "recommendation": "jdnfndf",
-    "sprintType": 4
+    "name": "Развить новый рабочий навык",
+    "recommendation": "",
+    "sprintType": 8
   },
   {
-    "name": "Начать ",
-    "recommendation": "dsjfnjd",
-    "sprintType": 4
-  },
-  {
-    "name": "Уборка",
-    "recommendation": "fjdshfjhd",
+    "name": "Начать бегать по утрам",
+    "recommendation": "",
     "sprintType": 1
   },
   {
-    "name": "Стирка",
-    "recommendation": "jdksfbkjdsnf",
-    "sprintType": 1
+    "name": "Купить квартиру/дом",
+    "recommendation": "",
+    "sprintType": 3
   },
   {
-    "name": "Мыть окна",
-    "recommendation": "jdksfbkjdsnf",
-    "sprintType": 1
+    "name": "Переехать в другую страну",
+    "recommendation": "",
+    "sprintType": 3
   },
   {
-    "name": "Учить иностранный язык",
-    "recommendation": "jdksfbkjdsnf",
-    "sprintType": 2
+    "name": "Переехать в другой город",
+    "recommendation": "",
+    "sprintType": 3
+  },
+  {
+    "name": "Выучить иностранный язык",
+    "recommendation": "",
+    "sprintType": 6
   },
   {
     "name": "Пойти на курсы профессионального роста",
-    "recommendation": "jdksfbkjdsnf",
-    "sprintType": 4
+    "recommendation": "",
+    "sprintType": 8
   },
   {
     "name": "Кулинарный мастер-класс",
-    "recommendation": "jdksfbkjdsnf",
-    "sprintType": 5
+    "recommendation": "",
+    "sprintType": 6
   },
   {
     "name": "Поход в театр",
-    "recommendation": "jdksfbkjdsnf",
-    "sprintType": 5
+    "recommendation": "",
+    "sprintType": 7
   },
 
   {
     "name": "Утренная зарядка",
-    "recommendation": "jdksfbkjdsnf",
-    "sprintType": 2
+    "recommendation": "",
+    "sprintType": 1
   },
   {
     "name": "Прием витаминов",
-    "recommendation": "jdksfbkjdsnf",
-    "sprintType": 2
+    "recommendation": "",
+    "sprintType": 1
+  },
+  {
+    "name": "Начать инвестировать",
+    "recommendation": "",
+    "sprintType": 4
+  },
+  {
+    "name": "Повысить уровень зарплаты",
+    "recommendation": "",
+    "sprintType": 4
+  },
+  {
+    "name": "Новые источники дохода",
+    "recommendation": "",
+    "sprintType": 4
   }
 ]

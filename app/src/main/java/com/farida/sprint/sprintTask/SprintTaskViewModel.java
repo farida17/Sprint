@@ -1,7 +1,10 @@
-package com.farida.sprint;
+package com.farida.sprint.sprintTask;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
+
+import com.farida.sprint.entity.SprintTask;
+import com.farida.sprint.repository.SprintTaskRepository;
 
 import java.util.List;
 
